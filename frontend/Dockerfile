@@ -1,4 +1,4 @@
-FROM node:22-alpine AS build
+FROM nginx:1.30.6-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
